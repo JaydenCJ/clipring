@@ -1,0 +1,19 @@
+[package]
+name = "clipring"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["JaydenCJ"]
+description = "Terminal clipboard history over OSC 52 — capture, browse, and re-paste across SSH, tmux, and screen."
+license = "MIT"
+repository = "https://github.com/JaydenCJ/clipring"
+keywords = ["clipboard", "osc52", "ssh", "tmux", "terminal"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# None. The base64 codec, the OSC 52 framing, the JSONL store and the
+# picker are all implemented on the Rust standard library.
+
+[profile.release]
+strip = true
+lto = true

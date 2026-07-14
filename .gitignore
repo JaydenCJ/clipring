@@ -1,0 +1,19 @@
+# --- build outputs ---
+target/
+build/
+dist/
+out/
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- caches / editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+.cache/
+coverage/
+*.log
+tmp/
